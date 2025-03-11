@@ -36,7 +36,7 @@ namespace TestAutomation.Pages
         {
             if (Helper.IsElementPresent(driver, preselectedAddress))
             {
-                Console.WriteLine("✅ Preselected address found. Skipping shipping details.");
+                Console.WriteLine("Preselected address found. Skipping shipping details.");
                 Helper.Click(driver, radio);
                 Helper.Click(driver, nextButton);
                 return;
