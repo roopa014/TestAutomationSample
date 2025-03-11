@@ -19,6 +19,7 @@ namespace TestAutomation.Tests
             driver = GetDriver();
             driver.Navigate().GoToUrl(Config.BaseUrl);
             driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
         }
 
         [TearDown]
